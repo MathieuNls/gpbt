@@ -8,7 +8,7 @@ This package provides a parallel binary tree where the the *Fetch* and *Add* com
 
 It works by creating a root-tree where each node is the root of a sub-tree. This divides the search space by k for the *Fetch* and *Add* operation as shown below.
 
-![untitled diagram](https://user-images.githubusercontent.com/7218861/27291126-61fb35e8-54dd-11e7-8e50-5b1e1ac98a32.png)
+![gpbt](https://user-images.githubusercontent.com/7218861/27291126-61fb35e8-54dd-11e7-8e50-5b1e1ac98a32.png)
 
 
 To fetch the key 149 (on the right most sub-tree), we first search for the floor key of 149 which gives us 150. 
