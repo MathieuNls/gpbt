@@ -18,21 +18,21 @@ Then, we look for 149 inside the sub-tree.
 
 ```go
   
-  //Dumb data
-  ints := make([]int, 30)
-	values := make([]interface{}, 30)
+//Dumb data
+ints := make([]int, 30)
+values := make([]interface{}, 30)
 
-	for i := 0; i < 30; i++ {
-		ints[i] = i * 3
-		values[i] = strconv.Itoa(i * 3)
-	}
+for i := 0; i < 30; i++ {
+	ints[i] = i * 3
+	values[i] = strconv.Itoa(i * 3)
+}
   
-  //New p-tree with 12 threads
-	tree := NewParralelTree(ints, values, 12)
+//New p-tree with 12 threads
+tree := NewParralelTree(ints, values, 12)
   
-  //Fetch the node (beloging to a sub-tree) with key = 3
-  node, err = tree.Fetch(3)
+//Fetch the node (beloging to a sub-tree) with key = 3
+node, err = tree.Fetch(3)
   
-  //Add 99-"99"
-  tree.Add(99, "99")
+//Add 99-"99"
+tree.Add(99, "99")
 ```
